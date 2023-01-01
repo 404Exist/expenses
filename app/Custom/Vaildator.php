@@ -18,7 +18,7 @@ class Vaildator
         $this->validator = new Validator($this->data);
     }
 
-    public function validate(?callable $callback = null): \Valitron\Validator|callable|bool
+    public function validate(?callable $callback = null): Validator|callable|bool
     {
         if (! $this->rules) {
             return $this->validator;

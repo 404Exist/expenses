@@ -57,7 +57,7 @@ class Auth implements AuthInterface
         return true;
     }
 
-    public function checkCredentials(Authenticatable $user, array $credentials): bool
+    public function checkCredentials(Authenticatable|null $user, array $credentials): bool
     {
         return $user && password_verify($credentials['password'], $user->getPassword());
     }

@@ -4,9 +4,6 @@ declare(strict_types=1);
 
 namespace App\Controllers;
 
-// use Psr\Http\Message\ServerRequestInterface as Request;
-// use Psr\Http\Message\ResponseInterface as Response;
-
 use Slim\Psr7\Request;
 use Slim\Psr7\Response;
 use Slim\Views\Twig;
